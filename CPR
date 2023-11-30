@@ -1,0 +1,19 @@
+                    Rectangle()
+                        .stroke()
+                        .frame(
+                            width: geometry[$0].width,
+                            height: geometry[$0].height
+                        )
+                        .offset(
+                            x: geometry[$0].minX,
+                            y: geometry[$0].minY
+                        )
+                }
+            }
+        }
+    }
+}
+
+struct ExampleView2: View {
+    
+    @State private var size: CGSize = .zero
